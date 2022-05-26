@@ -122,3 +122,21 @@ array
 // slice(-1) string ve array de son index i verir
 
 console.log(empty.join(" "));
+
+//?         pseudocode;
+//?   1.get each element of the array which bigger than 4000; foreach(x)=>(x>4000);
+//?   1.make  %25 raise  that salary x*1.25 and round the number 2 digit after "." (tofixed(2))
+//?   1.console.log(array);
+
+
+const maaşlar = [3000, 5000, 4000, 6000,6500];
+console.log(maaşlar.filter((x) => x > 4000).map((x)=>(x*1.25))); 
+
+// haso — dün 19:07
+// The goal of this exercise is to convert a string to a new string where each character in the new string is "(" if that character appears only once in the original string, or ")" if that character appears more than once in the original string. Ignore capitalization when determining if a character is a duplicate.
+// "din"      =>  "((("
+// "recede"   =>  "()()()"
+// "Success"  =>  ")())())"
+// "(( @"     =>  "))(("
+
+// ıf the given input is an array of Number, return the sum of all the positives ones. if the array is empty or there aren't any positive number return "o". filter ve reduce ile çözülecek.
